@@ -25,7 +25,7 @@ public class WordCRUD implements ICRUD{
     public void addWord(){
         Word one=(Word)add();
         list.add(one);
-        System.out.println(one.getName()+"가 추가되었습니다.");
+        System.out.println(one.getName()+"가 추가되었습니다.\n");
     }
 
     @Override
