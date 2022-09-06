@@ -23,7 +23,7 @@ public class WordManager {
         while (true) {
             int menu = selectMenu();
             if (menu==0){
-                System.out.println("이용해 주셔서 감사합니다!");
+                System.out.println("이용해 주셔서 감사합니다!!");
                 break;
             }
             if(menu==1){
