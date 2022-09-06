@@ -3,6 +3,7 @@ package org.example;
 public class Word {
     public Word(){}
 
+
     public Word(int id, int level, String name, String meaning) {
         this.id = id;
         this.level = level;
@@ -46,5 +47,15 @@ public class Word {
 
     public void setMeaning(String meaning) {
         this.meaning = meaning;
+    }
+
+    @Override
+    public String toString() {
+        String sLevel="";
+        for(int i=0;i<level;i++) sLevel+="*";
+
+        String str=String.format("%-3s",sLevel)
+                +String.format("%15s",name)+"  "+meaning;
+        return str;
     }
 }
