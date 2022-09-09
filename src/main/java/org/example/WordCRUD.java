@@ -43,13 +43,21 @@ public class WordCRUD implements ICRUD{
 
     }
 
-    public ArrayList<Integer> listAll(){
+    public ArrayList<Integer> listAll(String keyword){
+        ArrayList<Integer> idlist=new ArrayList<>();
+        int j=0;
+
         System.out.println("\n-----------------------");
         for(int i=0;i<list.size();i++){
-             System.out.print((i+1)+" ");
-             System.out.println(list.get(i).toString());
+            String word=list.get(i).getName();
+            if(!word.contains(keyword)) continue;
+            System.out.print((j+1)+" ");
+            System.out.println(list.get(i).toString());
+            idlist.add(i);
+            j++;
         }
         System.out.println("-----------------------\n");
+        return idlist;
     }
 
     public void updateItem() {
