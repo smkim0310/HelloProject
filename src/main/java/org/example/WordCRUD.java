@@ -51,4 +51,9 @@ public class WordCRUD implements ICRUD{
         }
         System.out.println("-----------------------\n");
     }
+
+    public void updateItem() {
+        System.out.print("=> 수정할 단어 검색 : ");
+        String keyword=kb.next();
+    }
 }
