@@ -75,6 +75,8 @@ public class WordCRUD implements ICRUD{
         ArrayList<Integer> idlist=this.listAll(keyword);
         System.out.print("=> 수정할 번호 선택 : ");
         int id=kb.nextInt();
+        kb.nextLine();
+
         System.out.print("=> 뜻 입력 : ");
         String meaning=kb.nextLine();
         Word word=list.get(idlist.get(id-1));
