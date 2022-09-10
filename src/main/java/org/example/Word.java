@@ -58,4 +58,8 @@ public class Word {
                 +String.format("%15s",name)+"  "+meaning;
         return str;
     }
+
+    public String toFileString(){
+        return this.level+"|"+this.name+"|"+this.meaning;
+    }
 }
